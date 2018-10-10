@@ -1,0 +1,166 @@
+body {
+background: black;
+}
+
+.cover {
+    width: 400px;
+    height: 600px;
+   position: absolute;
+    left: 50%;
+    transform: translate(-200px, 80px);
+    z-index: 0;
+    overflow: hidden;
+    
+}
+
+.center {
+    width: 400px;
+    height: 600px;
+}
+
+.move {
+    width: 400px;
+    height: 600px;
+}
+
+
+.background {
+    width: 400px;
+    height: 600px;
+   position: absolute;
+    left: 50%;
+    transform: translate(-200px, 0px);
+}
+
+.title {
+   position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.name {
+    width: 280px;
+    height: 280px;
+    transition: 1s;
+}
+
+.title:hover .name{
+    width: 350px;
+    height: 350px;
+    transition: 1s;
+}
+
+.leaf1 {
+    position: absolute;
+    top: 50%;
+    left: -30%;
+    z-index: 0;
+    animation: leaf1 4s infinite linear;
+    transform-origin: 0% 100%;
+}
+
+@keyframes leaf1 {
+    0% { transform: rotate(0deg); opacity: 0;}
+    20% { opacity: 1;}
+    100% { transform: rotate(100deg);}
+}
+
+.leaf2 {
+    position: absolute;
+    left: -20%;
+    top: 3%;
+    z-index: 0;
+    animation: leaf2 4s infinite linear;
+    transform-origin: 0% 0%;
+
+}
+
+@keyframes leaf2 {
+    0% { transform: rotate(0deg); opacity: 0;}
+    20% { opacity: 1;}
+    100% { transform: rotate(-100deg); opacity: 1;}
+}
+
+.leaf3 {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    z-index: 0;
+    animation: leaf3 4s infinite linear;
+     transform-origin: 100% 0%;
+   
+}
+
+@keyframes leaf3 {
+    0% { transform: rotate(0deg); opacity: 0;}
+    20% { opacity: 1;}
+    100% { transform: rotate(-100deg);}
+}
+
+.leaf4 {
+    position: absolute;
+    left: 50%;
+    top: -5%;
+    z-index: 0;
+    animation: leaf4 4s infinite linear;
+     transform-origin: 100% 100%;
+    
+}
+
+@keyframes leaf4 {
+    0% { transform: rotate(0deg); opacity: 0;}
+    20% { opacity: 1;}
+    100% { transform: rotate(100deg);}
+}
+
+
+/*
+
+.move:hover .leaf1 {
+    position: absolute;
+    top: 50%;
+    left: -30%;
+    z-index: 0;
+    opacity: 1;
+    transition: 3s;
+    transform: rotate(180deg);
+    transform-origin: 0% 100%;
+}
+
+.move:hover .leaf2 {
+    position: absolute;
+    left: -20%;
+    top: 3%;
+    opacity: 1;
+    transition: 3s;
+    transform: rotate(-180deg);
+    transform-origin: 0% 100%;
+}
+
+.move:hover .leaf3 {
+   position: absolute;
+    left: 50%;
+    top: 50%;
+    opacity: 1;
+    transition: 3s;
+    transform: rotate(-90deg);
+    transform-origin: -100% 0%;
+}
+
+.move:hover .leaf4 {
+     position: absolute;
+    left: 50%;
+    top: -5%;
+    opacity: 1;
+    transition: 3s;
+   transform: rotate(180deg);
+    transform-origin: -100% -100%;
+}
+
+
+
+
+
+
+
